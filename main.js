@@ -36,6 +36,8 @@ console.log(myAddressBook.findContact("vivek"));
 myAddressBook.UpdateContact("9304891411","lastName","Pathak");
 
 myAddressBook.displayContacts();
+console.log(myAddressBook.countContacts());
 
 myAddressBook.DeleteContent("Bhavya");
 myAddressBook.displayContacts();
+console.log(myAddressBook.countContacts());

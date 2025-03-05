@@ -7,10 +7,18 @@ export class AddressBook{
         this.contacts=[];
     }
 
+    //updated this method UC7
     addContact(contact) {
-        
-        this.contacts.push(contact);
-        console.log("Contact added successfully!");
+        let existingContacts = this.contacts.filter(c => 
+            c.firstName === contact.firstName && c.lastName === contact.lastName
+        );
+    
+        if (existingContacts.length > 0) {
+            console.log(`Error: Contact with name ${contact.firstName} ${contact.lastName} already exists!`);
+        } else {
+            this.contacts.push(contact);
+            console.log(`Contact ${contact.firstName} ${contact.lastName} added successfully!`);
+        }
     }
 
     displayContacts() {

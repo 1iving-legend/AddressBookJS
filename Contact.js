@@ -1,5 +1,5 @@
  
-import { validateName } from "./validators.js"; 
+import { validateName, validateAddress,validateZip,validatePhone,validateEmail } from "./validators.js"; 
 
  
  
@@ -7,6 +7,10 @@ import { validateName } from "./validators.js";
   constructor(firstName, lastName, address, city, state, zip, phoneNumber, email) {
 
     validateName(firstName);
+    validateAddress(address);
+    validateZip(zip);
+    validatePhone(phoneNumber) ;
+    validateEmail(email);
       this.firstName = firstName;
       this.lastName = lastName;
       this.address = address;
@@ -16,14 +20,4 @@ import { validateName } from "./validators.js";
       this.phoneNumber = phoneNumber;
       this.email = email;
   }
-}
-
-
-try{
-const person1= new Contact("vivek","bhaskar", "Ketat kala","Rehla","Jharkhand",822124,9304891411,"vivekkpaathak@gmail.com");
-console.log(person1);
-}
-catch(error)
-{
- console.error(error.message);
 }

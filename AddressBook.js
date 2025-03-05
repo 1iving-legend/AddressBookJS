@@ -36,9 +36,6 @@ export class AddressBook{
 
 
     UpdateContact(phone, key,value){
-
-        
-
          this.contacts.forEach((contact)=>{
             if(contact.phoneNumber===phone)
             {
@@ -48,5 +45,15 @@ export class AddressBook{
          console.log(`${key} updated sucessfullay !`)
 
     }
+
+    //UC5
+
+    DeleteContent(Name)
+    {
+      this.contacts= this.contacts.filter(contact=>contact.firstName!=Name);
+         console.log(" Deleted sucessfullay ")
+
+    }
+    
 
 }

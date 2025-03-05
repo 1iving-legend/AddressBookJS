@@ -21,7 +21,7 @@ try {
     myAddressBook.addContact(person2);
     myAddressBook.addContact(person3);
     myAddressBook.addContact(person4);
-    myAddressBook.addContact(person4);
+    myAddressBook.addContact(person5);
     myAddressBook.addContact(person6);
     myAddressBook.addContact(person7);
 
@@ -35,4 +35,7 @@ console.log(myAddressBook.findContact("vivek"));
 
 myAddressBook.UpdateContact("9304891411","lastName","Pathak");
 
+myAddressBook.displayContacts();
+
+myAddressBook.DeleteContent("Bhavya");
 myAddressBook.displayContacts();

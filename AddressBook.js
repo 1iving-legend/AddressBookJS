@@ -71,6 +71,19 @@ export class AddressBook{
         return `size of address book is ${count}`;
 
     }
+
+
+    //UC8
+
+    searchByState(state){
+        let data = this.contacts.filter(c => c.state === state);
+
+        // if (data.length === 0) {
+        //     console.log(`No contacts found in state: ${state}`);
+        //     return [];
+        // }
     
+        return data;
+    }
 
 }

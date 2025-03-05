@@ -20,4 +20,33 @@ export class AddressBook{
         });
     }
 
+    findContact(name){
+
+        let found=false;
+
+         this.contacts.forEach((contact)=>{
+            if(contact.firstName===name)
+            {
+                found=true;
+            }
+         })
+         return `${name} is present ? ${found}`;
+
+    }
+
+
+    UpdateContact(phone, key,value){
+
+        
+
+         this.contacts.forEach((contact)=>{
+            if(contact.phoneNumber===phone)
+            {
+                contact[key]=value;   
+            }
+         })
+         console.log(`${key} updated sucessfullay !`)
+
+    }
+
 }

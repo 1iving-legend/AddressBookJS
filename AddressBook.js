@@ -54,6 +54,15 @@ export class AddressBook{
          console.log(" Deleted sucessfullay ")
 
     }
+
+    //UC6
+
+    countContacts()
+    {
+        let count= this.contacts.length;
+        return `size of address book is ${count}`;
+
+    }
     
 
 }

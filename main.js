@@ -41,3 +41,7 @@ console.log(myAddressBook.countContacts());
 myAddressBook.DeleteContent("Bhavya");
 myAddressBook.displayContacts();
 console.log(myAddressBook.countContacts());
+console.log();
+console.log("UC8");
+console.log();
+console.log([...myAddressBook.searchByState("Uttar Pradesh")]);

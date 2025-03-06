@@ -78,10 +78,25 @@ export class AddressBook{
     searchByState(state){
         let data = this.contacts.filter(c => c.state === state);
 
-        // if (data.length === 0) {
-        //     console.log(`No contacts found in state: ${state}`);
-        //     return [];
-        // }
+        if (data.length === 0) {
+            console.log(`No contacts found in state: ${state}`);
+            return [];
+        }
+    
+        return data;
+    }
+
+    search(state, name){
+        let data = this.contacts.filter(
+
+            (contact)=>(contact.state===state) && (contact.firstName===name) ||null
+
+        );
+
+        if (data.length === 0) {
+            console.log(`No contacts found in state: ${state}`);
+            return [];
+        }
     
         return data;
     }

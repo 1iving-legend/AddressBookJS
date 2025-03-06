@@ -120,9 +120,18 @@ export class AddressBook{
         return count;
     }
 
+    //UC11
     SortByName()
     {
        this.contacts.sort((ab,ba)=>(ab.firstName>ba.firstName)?1:((ba.firstName>ab.firstName)?-1:0)) ;
+    }
+
+
+    //UC12
+    SortByvalue(value)
+    {
+        console.log(`sort by ${value}`);
+       this.contacts.sort((ab,ba)=>(ab[value]>ba[value])?1:((ba[value]>ab[value])?-1:0)) ;
     }
 
 }

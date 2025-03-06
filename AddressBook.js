@@ -86,6 +86,9 @@ export class AddressBook{
         return data;
     }
 
+
+    //UC9
+
     search(state, name){
         let data = this.contacts.filter(
 
@@ -99,6 +102,22 @@ export class AddressBook{
         }
     
         return data;
+    }
+
+
+
+    //UC10
+
+    countBYArea(value)
+    {
+        let count=0;
+        this.contacts.forEach(contact=>{
+            if(contact.state===value || contact.city===value)
+            {
+                count++;
+            }
+        })
+        return count;
     }
 
 }

@@ -54,3 +54,15 @@ console.log(myAddressBook.countBYArea("Uttar Pradesh"));
 myAddressBook.displayContacts();
 myAddressBook.SortByName();
 myAddressBook.displayContacts();
+
+console.log();
+console.log("UC12");
+console.log();
+myAddressBook.SortByvalue("state");
+myAddressBook.displayContacts();
+console.log();
+myAddressBook.SortByvalue("zip");
+myAddressBook.displayContacts();
+console.log();
+myAddressBook.SortByvalue("phoneNumber");
+myAddressBook.displayContacts();

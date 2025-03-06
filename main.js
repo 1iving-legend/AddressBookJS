@@ -45,3 +45,5 @@ console.log();
 console.log("UC8");
 console.log();
 console.log([...myAddressBook.searchByState("Uttar Pradesh")]);
+
+console.log([...myAddressBook.search("Uttar Pradesh","Riya")]);

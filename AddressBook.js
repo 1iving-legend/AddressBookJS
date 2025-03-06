@@ -120,4 +120,9 @@ export class AddressBook{
         return count;
     }
 
+    SortByName()
+    {
+       this.contacts.sort((ab,ba)=>(ab.firstName>ba.firstName)?1:((ba.firstName>ab.firstName)?-1:0)) ;
+    }
+
 }

@@ -49,3 +49,8 @@ console.log([...myAddressBook.searchByState("Uttar Pradesh")]);
 console.log([...myAddressBook.search("Uttar Pradesh","Riya")]);
 console.log(myAddressBook.countBYArea("Rehla"));
 console.log(myAddressBook.countBYArea("Uttar Pradesh"));
+
+
+myAddressBook.displayContacts();
+myAddressBook.SortByName();
+myAddressBook.displayContacts();
